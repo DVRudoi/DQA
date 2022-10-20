@@ -28,14 +28,14 @@ public abstract class BaseTest {
     @BeforeMethod
     protected void beforeTest(){
         driver = new ChromeDriver();
+        getDriver().manage().window().maximize();
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         getWeb();
-        getDriver().manage().window().maximize();
     }
 
-    @AfterMethod
-    protected void afterTest() {
-        getDriver().quit();
-    }
+//    @AfterMethod
+//    protected void afterTest() {
+//        getDriver().quit();
+//    }
 
 }
