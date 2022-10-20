@@ -1,6 +1,7 @@
 package models;
 
 import base.TestUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,6 +22,14 @@ public final class HomePage extends BasePage {
 
     public HomePage(WebDriver driver) {
         super(driver);
+    }
+
+    public ElementsPage go(String str) {
+        WebElement webElement = getDriver().findElement(By.xpath(String.format("//h5[text()='%s']", str)));
+        TestUtils.scrollToElement(getDriver(), webElement);
+        webElement.click();
+
+        return new ElementsPage(getDriver());
     }
 
     public ElementsPage goElements() {
@@ -52,7 +61,7 @@ public final class HomePage extends BasePage {
     }
 
     public ElementsPage goInteractions() {
-        TestUtils.scrollToElement(getDriver(), btnWidgets);
+        TestUtils.scrollToElement(getDriver(), btnInteractions);
         btnInteractions.click();
 
         return new ElementsPage(getDriver());

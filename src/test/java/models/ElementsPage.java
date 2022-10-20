@@ -81,7 +81,7 @@ public class ElementsPage extends BasePage {
         return list;
     }
 
-    public String getErrorEmailCssValue(){
+    public String getErrorEmailCssValue() {
         TestUtils.scrollToElement(getDriver(), inputEmail);
         return inputEmail.getCssValue("border");
     }

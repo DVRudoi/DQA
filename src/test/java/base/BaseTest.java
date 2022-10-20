@@ -14,16 +14,17 @@ import java.time.Duration;
 public abstract class BaseTest {
     private WebDriver driver;
     private ChromeOptions options;
+
     protected WebDriver getDriver() {
         return driver;
     }
 
-    protected void getWeb (){
+    protected void getWeb() {
         getDriver().get("https://demoqa.com/");
     }
 
     @BeforeClass
-    protected void before () {
+    protected void before() {
         WebDriverManager.chromedriver().setup();
         options = new ChromeOptions();
         options.addArguments("--window-size=1360,768");
@@ -31,7 +32,7 @@ public abstract class BaseTest {
     }
 
     @BeforeMethod
-    protected void beforeTest(){
+    protected void beforeTest() {
         driver = new ChromeDriver(options);
 //        getDriver().manage().window().maximize(); //if need to maximize window;
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

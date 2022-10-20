@@ -36,7 +36,7 @@ public class ElementsTest extends BaseTest {
     }
 
     @Test
-    public void testErrorEmail(){
+    public void testErrorEmail() {
         String actualResult = new HomePage(getDriver())
                 .goElements()
                 .clickTextBox()

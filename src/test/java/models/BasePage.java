@@ -20,8 +20,8 @@ public abstract class BasePage {
     }
 
     public WebDriverWait getWait10() {
-        if (wait == null){
-            wait = new WebDriverWait(getDriver(),Duration.ofSeconds(10));
+        if (wait == null) {
+            wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
         }
 
         return wait;
