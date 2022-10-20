@@ -52,7 +52,7 @@ public final class HomePage extends BasePage {
     }
 
     public ElementsPage goInteractions() {
-        TestUtils.scrollToElement(getDriver(), btnWidgets);
+        TestUtils.scrollToElement(getDriver(), btnInteractions);
         btnInteractions.click();
 
         return new ElementsPage(getDriver());
