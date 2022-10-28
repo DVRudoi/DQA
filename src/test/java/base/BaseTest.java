@@ -39,9 +39,9 @@ public abstract class BaseTest {
         getWeb();
     }
 
-    @AfterMethod
-    protected void afterTest() {
-        getDriver().quit();
-    }
-
+//    @AfterMethod
+//    protected void afterTest() {
+//        getDriver().quit();
+//    }
+//
 }

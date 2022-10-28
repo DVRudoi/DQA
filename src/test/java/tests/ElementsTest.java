@@ -15,7 +15,7 @@ public class ElementsTest extends BaseTest {
     private static final String RANDOM_EMAIL = String.format("%s@gmail.com", RANDOM_STR);
 
     @Test
-    public void testTextBox() {
+    public void testTextBoxPositive() {
         List<String> expectedResult = new ArrayList<>();
         expectedResult.add(String.format("Name:%s", RANDOM_STR));
         expectedResult.add(String.format("Email:%s", RANDOM_EMAIL));
@@ -36,7 +36,7 @@ public class ElementsTest extends BaseTest {
     }
 
     @Test
-    public void testErrorEmail() {
+    public void testTextBoxErrorEmail() {
         String actualResult = new HomePage(getDriver())
                 .goElements()
                 .clickTextBox()
@@ -45,5 +45,45 @@ public class ElementsTest extends BaseTest {
                 .getErrorEmailCssValue();
 
         Assert.assertTrue(actualResult.contains("rgb(255, 0, 0)"));
+    }
+
+    @Test
+    public void testCheckBox() {
+        List<String> expectResult = List.of("You have selected :", "home", "desktop", "notes", "commands",
+                "documents", "workspace", "react", "angular", "veu", "office", "public", "private", "classified",
+                "general", "downloads", "wordFile", "excelFile");
+
+        List<String> actualResult = new HomePage(getDriver())
+                .goElements()
+                .clickCheckBox()
+                .clickMainCheckBox()
+                .getResult();
+
+        Assert.assertEquals(actualResult,expectResult);
+    }
+
+//    @Test
+//    public void testCheckBox(){
+//        List<String> actualResult = new HomePage(getDriver())
+//                .goElements()
+//                .clickCheckBox()
+//                .clickMainCheckBox()
+//                .getText();Переделать !!!!!!!!!!!!1Нужна помощь svg xpath
+//
+//        Assert.assertTrue(actualResult.contains("check"));
+//    }
+
+    @Test
+    public void testWebTableChangeAmountLines(){
+        ElementsPage.EnumRowsTable enumRowsTable = ElementsPage.EnumRowsTable.rows5;
+
+        int actualResult = new HomePage(getDriver())
+                .goElements()
+                .clickWebTables()
+                .changeSizeTable()
+                .select(enumRowsTable.getAmountRows())
+                .countRowsInTab();
+
+        Assert.assertEquals(actualResult, enumRowsTable.getExpectedAmountRows());
     }
 }

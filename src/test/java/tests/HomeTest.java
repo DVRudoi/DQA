@@ -19,10 +19,10 @@ public class HomeTest extends BaseTest {
     }
 
     @Test(dataProvider = "data-provider")
-    public void testCheckData(String str) {
+    public void testCheckCardBody(String str) {
         String actualText = new HomePage(getDriver())
-                .go(str)
-                .getNamePage();
+                .clickCardBody(str)
+                .getMainHeader();
 
         Assert.assertEquals(actualText, str);
     }
@@ -31,7 +31,7 @@ public class HomeTest extends BaseTest {
     public void testCheckBtnElements() {
         String actualText = new HomePage(getDriver())
                 .goElements()
-                .getNamePage();
+                .getMainHeader();
 
         Assert.assertEquals(actualText, "Elements");
     }
@@ -40,7 +40,7 @@ public class HomeTest extends BaseTest {
     public void testCheckBtnForms() {
         String actualText = new HomePage(getDriver())
                 .goForms()
-                .getNamePage();
+                .getMainHeader();
 
         Assert.assertEquals(actualText, "Forms");
     }
@@ -49,7 +49,7 @@ public class HomeTest extends BaseTest {
     public void testCheckBtnAlertsFrameWindows() {
         String actualText = new HomePage(getDriver())
                 .goAlertsFrameWindows()
-                .getNamePage();
+                .getMainHeader();
 
         Assert.assertEquals(actualText, "Alerts, Frame & Windows");
     }
@@ -58,7 +58,7 @@ public class HomeTest extends BaseTest {
     public void testCheckBtnWidgets() {
         String actualText = new HomePage(getDriver())
                 .goWidgets()
-                .getNamePage();
+                .getMainHeader();
 
         Assert.assertEquals(actualText, "Widgets");
     }
@@ -67,7 +67,7 @@ public class HomeTest extends BaseTest {
     public void testCheckBtnInteractions() {
         String actualText = new HomePage(getDriver())
                 .goInteractions()
-                .getNamePage();
+                .getMainHeader();
 
         Assert.assertEquals(actualText, "Interactions");
     }
@@ -76,7 +76,7 @@ public class HomeTest extends BaseTest {
     public void testCheckBtnBookStoreApplication() {
         String actualText = new HomePage(getDriver())
                 .goBookStoreApplication()
-                .getNamePage();
+                .getMainHeader();
 
         Assert.assertEquals(actualText, "Book Store");
     }

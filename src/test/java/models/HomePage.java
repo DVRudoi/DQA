@@ -1,6 +1,7 @@
 package models;
 
 import base.TestUtils;
+import models.BasePages.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,8 +25,8 @@ public final class HomePage extends BasePage {
         super(driver);
     }
 
-    public ElementsPage go(String str) {
-        WebElement webElement = getDriver().findElement(By.xpath(String.format("//h5[text()='%s']", str)));
+    public ElementsPage clickCardBody(String str) {
+        WebElement webElement = getDriver().findElement(By.xpath(String.format("//h5[text()[contains(.,'%s')]]", str)));
         TestUtils.scrollToElement(getDriver(), webElement);
         webElement.click();
 
