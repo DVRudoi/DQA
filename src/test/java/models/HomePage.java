@@ -47,11 +47,11 @@ public final class HomePage extends BasePage {
         return new ElementsPage(getDriver());
     }
 
-    public ElementsPage goAlertsFrameWindows() {
+    public AlertsFrameWindowsPage goAlertsFrameWindows() {
         TestUtils.scrollToElement(getDriver(), btnAlertsFrameWindows);
         btnAlertsFrameWindows.click();
 
-        return new ElementsPage(getDriver());
+        return new AlertsFrameWindowsPage(getDriver());
     }
 
     public ElementsPage goWidgets() {
