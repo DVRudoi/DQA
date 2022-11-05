@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd825eef-07de-44e8-a638-05f6206dea59" name="Changes" comment="Add Data Provider Home Test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/BasePages/BaseSideMenuPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/AlertsFrameWindowsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AlertsFrameWindowsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/BasePages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/models/ElementsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/ElementsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/models/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ElementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ElementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/HomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HomeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -44,8 +47,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.ElementsTest.testWebTableChangeAmountLines">
-    <configuration name="ElementsTest.testCheckBox" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AlertsFrameWindowsTest.testFrames">
+    <configuration name="AlertsFrameWindowsTest.testAlert" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoQA" />
       <extension name="coverage">
         <pattern>
@@ -54,8 +57,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ElementsTest" />
-      <option name="METHOD_NAME" value="testCheckBox" />
+      <option name="MAIN_CLASS_NAME" value="tests.AlertsFrameWindowsTest" />
+      <option name="METHOD_NAME" value="testAlert" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlertsFrameWindowsTest.testFrames" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.AlertsFrameWindowsTest" />
+      <option name="METHOD_NAME" value="testFrames" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -99,23 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DemoQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HomeTest.testCheckCardBody" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoQA" />
       <extension name="coverage">
@@ -134,31 +138,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeTest.testCheckData" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DemoQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
-      <option name="METHOD_NAME" value="testCheckData" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AlertsFrameWindowsTest.testFrames" />
+        <item itemvalue="TestNG.AlertsFrameWindowsTest.testAlert" />
         <item itemvalue="TestNG.ElementsTest.testWebTableChangeAmountLines" />
         <item itemvalue="TestNG.HomeTest.testCheckCardBody" />
         <item itemvalue="TestNG.ElementsTest.testTextBoxErrorEmail" />
-        <item itemvalue="TestNG.HomeTest.testCheckData" />
-        <item itemvalue="TestNG.HomeTest" />
       </list>
     </recent_temporary>
   </component>
