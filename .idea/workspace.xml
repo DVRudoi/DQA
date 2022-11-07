@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd825eef-07de-44e8-a638-05f6206dea59" name="Changes" comment="Add Data Provider Home Test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/AlertsFrameWindowsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AlertsFrameWindowsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/WidgetsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/WidgetsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/ElementsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/ElementsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/AlertsFrameWindowsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/AlertsFrameWindowsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/BasePages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/BasePages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/models/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +47,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.AlertsFrameWindowsTest.testFrames">
+  <component name="RunManager" selected="TestNG.WidgetsTest.testProgressBar">
     <configuration name="AlertsFrameWindowsTest.testAlert" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoQA" />
       <extension name="coverage">
@@ -84,24 +84,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ElementsTest.testTextBoxErrorEmail" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="DemoQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ElementsTest" />
-      <option name="METHOD_NAME" value="testTextBoxErrorEmail" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ElementsTest.testWebTableChangeAmountLines" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoQA" />
       <extension name="coverage">
@@ -120,7 +102,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeTest.testCheckCardBody" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WidgetsTest.testProgressBar" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoQA" />
       <extension name="coverage">
         <pattern>
@@ -129,8 +111,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HomeTest" />
-      <option name="METHOD_NAME" value="testCheckCardBody" />
+      <option name="MAIN_CLASS_NAME" value="tests.WidgetsTest" />
+      <option name="METHOD_NAME" value="testProgressBar" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WidgetsTest.testTooltipInner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="DemoQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.WidgetsTest" />
+      <option name="METHOD_NAME" value="testTooltipInner" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -140,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.WidgetsTest.testProgressBar" />
+        <item itemvalue="TestNG.WidgetsTest.testTooltipInner" />
         <item itemvalue="TestNG.AlertsFrameWindowsTest.testFrames" />
         <item itemvalue="TestNG.AlertsFrameWindowsTest.testAlert" />
         <item itemvalue="TestNG.ElementsTest.testWebTableChangeAmountLines" />
-        <item itemvalue="TestNG.HomeTest.testCheckCardBody" />
-        <item itemvalue="TestNG.ElementsTest.testTextBoxErrorEmail" />
       </list>
     </recent_temporary>
   </component>

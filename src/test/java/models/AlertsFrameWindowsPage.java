@@ -45,19 +45,19 @@ public class AlertsFrameWindowsPage extends BasePage {
         return TestUtils.interactionsSimpleAlert(getDriver(), getWait10());
     }
 
-    public AlertsFrameWindowsPage clickFramesSideMenu(){
+    public AlertsFrameWindowsPage clickFramesSideMenu() {
         btnSideMenuFrames.click();
 
         return this;
     }
 
-    public AlertsFrameWindowsPage switchToIframe(){
+    public AlertsFrameWindowsPage switchToIframe() {
         getDriver().switchTo().frame(iframe);
 
         return this;
     }
 
-    public String getTextIframe(){
+    public String getTextIframe() {
         return textIframe.getText();
     }
 }
