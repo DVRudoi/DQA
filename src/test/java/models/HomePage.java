@@ -61,11 +61,11 @@ public final class HomePage extends BasePage {
         return new WidgetsPage(getDriver());
     }
 
-    public ElementsPage goInteractions() {
+    public InteractionsPage goInteractions() {
         TestUtils.scrollToElement(getDriver(), btnInteractions);
         btnInteractions.click();
 
-        return new ElementsPage(getDriver());
+        return new InteractionsPage(getDriver());
     }
 
     public ElementsPage goBookStoreApplication() {
