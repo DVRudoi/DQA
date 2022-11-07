@@ -2,7 +2,6 @@ package models;
 
 import base.TestUtils;
 import models.BasePages.BasePage;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -60,4 +59,5 @@ public class AlertsFrameWindowsPage extends BasePage {
     public String getTextIframe() {
         return textIframe.getText();
     }
+
 }

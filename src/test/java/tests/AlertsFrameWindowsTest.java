@@ -18,13 +18,14 @@ public class AlertsFrameWindowsTest extends BaseTest {
     }
 
     @Test
-    public void testFrames(){
+    public void testFrames() {
         String actualResult = new HomePage(getDriver())
                 .goAlertsFrameWindows()
                 .clickFramesSideMenu()
                 .switchToIframe()
                 .getTextIframe();
 
-        Assert.assertEquals(actualResult,"This is a sample page");
+        Assert.assertEquals(actualResult, "This is a sample page");
     }
+
 }

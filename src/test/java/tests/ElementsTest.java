@@ -59,22 +59,11 @@ public class ElementsTest extends BaseTest {
                 .clickMainCheckBox()
                 .getResult();
 
-        Assert.assertEquals(actualResult,expectResult);
+        Assert.assertEquals(actualResult, expectResult);
     }
 
-//    @Test
-//    public void testCheckBox(){
-//        List<String> actualResult = new HomePage(getDriver())
-//                .goElements()
-//                .clickCheckBox()
-//                .clickMainCheckBox()
-//                .getText();Переделать !!!!!!!!!!!!1Нужна помощь svg xpath
-//
-//        Assert.assertTrue(actualResult.contains("check"));
-//    }
-
     @Test
-    public void testWebTableChangeAmountLines(){
+    public void testWebTableChangeAmountLines() {
         ElementsPage.EnumRowsTable enumRowsTable = ElementsPage.EnumRowsTable.rows5;
 
         int actualResult = new HomePage(getDriver())
@@ -86,4 +75,5 @@ public class ElementsTest extends BaseTest {
 
         Assert.assertEquals(actualResult, enumRowsTable.getExpectedAmountRows());
     }
+
 }
