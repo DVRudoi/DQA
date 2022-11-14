@@ -25,13 +25,13 @@ public abstract class BaseTest {
     @BeforeClass
     protected void before() {
         WebDriverManager.chromedriver().setup();
-        options = new ChromeOptions();
-        options.addArguments("--window-size=1360,768");
-        options.addArguments("--window-position=0,0");
     }
 
     @BeforeMethod
     protected void beforeTest() {
+        options = new ChromeOptions();
+        options.addArguments("--window-size=1360,768");
+        options.addArguments("--window-position=0,0");
         driver = new ChromeDriver(options);
 //        getDriver().manage().window().maximize(); //if need to maximize window;
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

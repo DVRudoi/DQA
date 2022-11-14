@@ -2,6 +2,7 @@ package tests;
 
 import base.BaseTest;
 import models.HomePage;
+import models.WidgetsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,15 +20,15 @@ public class WidgetsTest extends BaseTest {
 
     @Test
     public void testProgressBar() {
-        String actualResult = new HomePage(getDriver())
+         WidgetsPage newWidgetsPage = new HomePage(getDriver())
                 .goWidgets()
                 .clickProgressBarSideMenu()
                 .clickStart()
                 .waitFullLoad()
-                .clickReset()
-                .getValueProgressBar();
+                .clickReset();
 
-        Assert.assertEquals(actualResult, "0");
+        Assert.assertEquals(newWidgetsPage.getValueProgressBar(), "0");
+        Assert.assertEquals(newWidgetsPage.getTextButton(), "Start");
     }
 
 }

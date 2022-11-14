@@ -63,10 +63,7 @@ public class WidgetsPage extends BasePage {
     }
 
     public WidgetsPage waitFullLoad() {
-        getWait20().until
-                (ExpectedConditions
-                        .attributeContains(progressBar, "aria-valuenow", "100")
-                );
+        getWait20().until(ExpectedConditions.attributeContains(progressBar, "aria-valuenow", "100"));
 
         return this;
     }
@@ -80,6 +77,10 @@ public class WidgetsPage extends BasePage {
 
     public String getValueProgressBar() {
         return progressBar.getAttribute("aria-valuenow");
+    }
+
+    public String getTextButton() {
+        return btnStartStop.getText();
     }
 
 }
