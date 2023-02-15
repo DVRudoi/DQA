@@ -32,6 +32,7 @@ public abstract class BaseTest {
         options = new ChromeOptions();
         options.addArguments("--window-size=1360,768");
         options.addArguments("--window-position=0,0");
+        options.addArguments("--headless");
         driver = new ChromeDriver(options);
 //        getDriver().manage().window().maximize(); //if need to maximize window;
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
