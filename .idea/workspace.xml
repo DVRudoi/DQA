@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd825eef-07de-44e8-a638-05f6206dea59" name="Changes" comment="Add Data Provider Home Test">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2022_15_38_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_11_2022_15_38__Changes_.xml" beforeDir="false" />
+    <list default="true" id="dd825eef-07de-44e8-a638-05f6206dea59" name="Changes" comment="RF">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/WidgetsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/WidgetsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/WidgetsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/WidgetsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +37,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Project/DemoQA"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.WidgetsTest.testProgressBar">
+}]]></component>
+  <component name="RunManager" selected="TestNG.AlertsFrameWindowsTest.testFrames">
     <configuration name="AlertsFrameWindowsTest.testAlert" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoQA" />
       <extension name="coverage">
@@ -140,8 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.WidgetsTest.testProgressBar" />
         <item itemvalue="TestNG.AlertsFrameWindowsTest.testFrames" />
+        <item itemvalue="TestNG.WidgetsTest.testProgressBar" />
         <item itemvalue="TestNG.AlertsFrameWindowsTest.testAlert" />
         <item itemvalue="TestNG.InteractionsTest.testDroppable" />
         <item itemvalue="TestNG.ElementsTest.testCheckBox" />
