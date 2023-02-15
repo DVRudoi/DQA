@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dd825eef-07de-44e8-a638-05f6206dea59" name="Changes" comment="RF">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="rdv/demo_03" />
+        <entry key="$PROJECT_DIR$" value="rdv/demo_04" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,13 +36,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Project/DemoQA"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project/DemoQA&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.AlertsFrameWindowsTest.testFrames">
     <configuration name="AlertsFrameWindowsTest.testAlert" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="DemoQA" />
@@ -137,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AlertsFrameWindowsTest.testFrames" />
         <item itemvalue="TestNG.WidgetsTest.testProgressBar" />
-        <item itemvalue="TestNG.AlertsFrameWindowsTest.testAlert" />
         <item itemvalue="TestNG.InteractionsTest.testDroppable" />
         <item itemvalue="TestNG.ElementsTest.testCheckBox" />
+        <item itemvalue="TestNG.AlertsFrameWindowsTest.testFrames" />
+        <item itemvalue="TestNG.AlertsFrameWindowsTest.testAlert" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666307112877</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="RF">
+      <created>1676489509508</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676489509508</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +198,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="BasePage, BaseTest" />
     <MESSAGE value="Add Data Provider Home Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Data Provider Home Test" />
+    <MESSAGE value="RF" />
+    <option name="LAST_COMMIT_MESSAGE" value="RF" />
   </component>
 </project>
